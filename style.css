@@ -1,0 +1,267 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Custom class names */
+.pytixs-event-ticket {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d4ed8; /* Equivalent to bg-blue-700 */
+}
+
+.pytixs-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem; /* Equivalent to max-w-3xl */
+  background-color: #fff;
+  padding: 1rem;
+  padding-bottom: 4rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.16); /* Equivalent to shadow-xl */
+  border-radius: 1rem; /* Equivalent to sm:rounded-xl */
+}
+
+.pytixs-container img {
+  height: auto;
+  width: 8rem; /* Equivalent to w-32 */
+}
+
+.pytixs-event-ticket .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pytixs-event-ticket .header .date-info {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.date-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date-info span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.date-text span {
+  font-size: 0.75rem;
+}
+
+.pytixs-event-ticket .ticket-info {
+  overflow: hidden;
+  border-radius: 1.5rem; /* Equivalent to rounded-3xl */
+  border: 0.125rem solid #718096; /* Equivalent to border-2 border-gray-500 */
+}
+
+.pytixs-event-ticket .ticket-info .ticket-image {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 1.5rem;
+  background-image: url("https://mmc.tirto.id/image/2023/05/09/coldplay--1_ratio-16x9.jpg");
+}
+
+.pytixs-event-ticket .ticket-info .ticket-image img {
+  width: 80%;
+  height: auto;
+}
+
+.pytixs-event-ticket .ticket-info .ticket-details {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.event-title span,
+.event-date span,
+.event-type span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.pytixs-event-ticket .ticket-info .additional-info {
+  border-bottom: 0.125rem solid #000;
+  border-top: 0.125rem solid #000;
+  background-color: #dcdcdc;
+}
+
+.pytixs-event-ticket .ticket-info .additional-info .additional-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.pytixs-event-ticket .ticket-info .additional-info .additional-info-item {
+  border-left: 0.05rem solid #000;
+  gap: 0.2rem;
+}
+
+.pytixs-event-ticket
+  .ticket-info
+  .additional-info
+  .additional-info-item:first-child {
+  border-left: none;
+}
+
+.pytixs-event-ticket
+  .ticket-info
+  .additional-info
+  .additional-info-grid
+  .additional-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.pytixs-event-ticket
+  .ticket-info
+  .additional-info
+  .additional-info-grid
+  .additional-info-item
+  .info-label {
+  font-size: 1rem;
+}
+
+.pytixs-event-ticket
+  .ticket-info
+  .additional-info
+  .additional-info-grid
+  .additional-info-item {
+  font-weight: bold;
+}
+
+.pytixs-event-ticket
+  .ticket-info
+  .additional-info
+  .additional-info-grid
+  .info-value {
+  font-size: 1.3rem;
+}
+
+.pytixs-event-ticket .terms-and-conditions {
+  padding: 0.5rem;
+}
+
+.pytixs-event-ticket .terms-and-conditions .tnc-title {
+  text-align: center;
+  font-size: 1.5rem; /* Equivalent to text-xl */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pytixs-event-ticket .terms-and-conditions .tnc-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem; /* Equivalent to gap-3 */
+}
+
+.pytixs-event-ticket .terms-and-conditions .tnc-content .tnc-column {
+  padding: 1rem;
+}
+
+.pytixs-event-ticket .terms-and-conditions .tnc-content .tnc-column ul {
+  list-style-position: outside;
+  list-style-type: disc;
+}
+
+.pytixs-event-ticket .terms-and-conditions .tnc-content .tnc-column .tnc-item {
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+
+.pytixs-event-ticket .footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.125rem solid #000;
+  background-color: #0a0045;
+  color: #fff;
+}
+
+.pytixs-event-ticket .footer .contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-left: 0.1rem solid #fff;
+  width: 100%;
+}
+
+.pytixs-event-ticket .footer .contact-info:first-child {
+  border-left: none;
+}
+
+.pytixs-event-ticket .footer .contact-info .contact-icon {
+  margin-right: 0.5rem;
+}
+
+.pytixs-event-ticket .footer .contact-info .contact-text {
+  font-weight: light;
+}
+
+.pytixs-event-ticket .footer .contact-info .contact-text a {
+  color: #fff;
+}
+
+.pytixs-event-ticket .footer .brand-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.pytixs-event-ticket .footer .brand-info .brand-icon {
+  margin-right: 0.5rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media screen and (max-width: 640px) {
+  /* Responsive styles for small screens (sm) */
+  .pytixs-container {
+    max-width: 64rem; /* Adjust max-width for small screens */
+    border-radius: 0;
+  }
+  .pytixs-event-ticket .ticket-info .ticket-image {
+    grid-template-columns: 1fr;
+  }
+  .pytixs-event-ticket .ticket-info .ticket-image img {
+    width: 50%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .pytixs-event-ticket .terms-and-conditions .tnc-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .pytixs-event-ticket
+    .ticket-info
+    .additional-info
+    .additional-info-grid
+    .additional-info-item
+    .info-value {
+    font-size: 1rem;
+  }
+  .pytixs-event-ticket .footer {
+    flex-direction: column;
+  }
+}
