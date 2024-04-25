@@ -176,14 +176,9 @@ body {
   padding: 1rem;
 }
 
-.pytixs-event-ticket .terms-and-conditions .tnc-content .tnc-column ul {
-  list-style-position: outside;
-  list-style-type: disc;
-}
-
 .pytixs-event-ticket .terms-and-conditions .tnc-content .tnc-column .tnc-item {
   margin-bottom: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 
 .pytixs-event-ticket .footer {
@@ -254,10 +249,12 @@ body {
     height: auto;
     margin-bottom: 1rem;
   }
+  .pytixs-event-ticket .terms-and-conditions .tnc-content .tnc-column {
+    padding: 0 0.3rem;
+  }
   .pytixs-event-ticket .terms-and-conditions .tnc-content {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 0;
   }
   .pytixs-event-ticket
     .ticket-info
